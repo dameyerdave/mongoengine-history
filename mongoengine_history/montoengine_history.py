@@ -5,8 +5,8 @@ from datetime import datetime
 
 
 class History(Document):
-    identity = fields.ObjectIdField()
-    document_id = fields.ObjectIdField()
+    identity = fields.StringField()
+    document_id = fields.StringField()
     document_type = fields.StringField()
     action = fields.StringField()
     path = fields.StringField()
